@@ -15,7 +15,7 @@ class NewsEntryListPage extends StatefulWidget {
 
 class _NewsEntryListPageState extends State<NewsEntryListPage> {
   Future<List<NewsEntry>> fetchNews(CookieRequest request) async {   
-    final response = await request.get('http://localhost:8000/json/');
+    final response = await request.get('http://localhost:8000/json');
     
     // Decode response to json format
     var data = response;
